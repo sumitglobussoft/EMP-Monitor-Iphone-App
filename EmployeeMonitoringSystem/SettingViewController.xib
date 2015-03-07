@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SettingViewController">
+            <connections>
+                <outlet property="AutorunApp" destination="93h-x0-eDW" id="0Dr-tD-lDW"/>
+                <outlet property="Notification" destination="r7H-O2-OLh" id="EQX-1r-J8Q"/>
+                <outlet property="ShowBusy" destination="XVT-cz-s0C" id="d2b-oh-cxB"/>
+                <outlet property="notificationTime" destination="2cV-Q3-w4x" id="18Z-Tg-igp"/>
+                <outlet property="settingView" destination="9cz-qM-C7t" id="zNx-dB-7fJ"/>
+                <outlet property="txtFMsg" destination="Wzb-D6-r8t" id="mDO-2J-j2O"/>
+                <outlet property="txtfName" destination="BeE-1k-8SZ" id="KwR-kg-1nR"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="b6d-Y2-bhp"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="901" height="839"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cz-qM-C7t">
+                    <rect key="frame" x="0.0" y="-12" width="918" height="851"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3HH-Xl-4i0">
+                            <rect key="frame" x="18" y="702" width="847" height="31"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="justified" title="Display Name" id="yFI-q2-fG8">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <box canDrawConcurrently="YES" verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="gKK-pB-lVn">
+                            <rect key="frame" x="206" y="715" width="657" height="5"/>
+                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <font key="titleFont" metaFont="system"/>
+                        </box>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBN-lV-DpM">
+                            <rect key="frame" x="18" y="656" width="770" height="31"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Type a name as you want others to see it:" id="Afs-96-zpy">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeE-1k-8SZ">
+                            <rect key="frame" x="20" y="620" width="856" height="36"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="f8R-5A-o0a">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9L0-1h-fiF">
+                            <rect key="frame" x="18" y="581" width="234" height="22"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Type your task :" id="sfV-ub-Aj3">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wzb-D6-r8t">
+                            <rect key="frame" x="20" y="541" width="856" height="32"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Ok3-zi-veh">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qvp-Rs-Ebw">
+                            <rect key="frame" x="18" y="489" width="107" height="22"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SIGN IN" id="BE5-wB-lBb">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93h-x0-eDW" colorLabel="IBBuiltInLabel-Yellow">
+                            <rect key="frame" x="18" y="437" width="860" height="36"/>
+                            <buttonCell key="cell" type="check" title="Automatically run Emp Monitoring System app When I log on to Mac" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="sVH-jd-Y2s">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system" size="16"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="autoRunAction:" target="-2" id="jh3-Xc-11C"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jWF-eQ-i9B">
+                            <rect key="frame" x="18" y="400" width="78" height="26"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status" id="Nih-8A-X7U">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XVT-cz-s0C">
+                            <rect key="frame" x="18" y="366" width="813" height="28"/>
+                            <buttonCell key="cell" type="check" title="Show me as &quot;Busy&quot; when I am running a full screen program or presentations settings are turned on." bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="08q-tI-V2s">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system" size="16"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="showBusyAction:" target="-2" id="QBH-Vq-fag"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vlw-bJ-jFw">
+                            <rect key="frame" x="18" y="325" width="114" height="26"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Notifications" id="R1U-9h-BR4">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r7H-O2-OLh">
+                            <rect key="frame" x="11" y="283" width="802" height="36"/>
+                            <buttonCell key="cell" type="check" title="Notify me of my working time after every                  minutes" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="dWB-Io-3Ra">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system" size="18"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="notificationAction:" target="-2" id="Ewj-KH-aOF"/>
+                            </connections>
+                        </button>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5JU-zw-dSQ">
+                            <rect key="frame" x="568" y="104" width="119" height="48"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ok" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="Re0-cy-SWA">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system" size="18"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="okBtnAction:" target="-2" id="Chg-Zj-7MI"/>
+                            </connections>
+                        </button>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-Hv-Hh7">
+                            <rect key="frame" x="703" y="104" width="143" height="48"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cancel" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="jP4-Bh-WWm">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system" size="18"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="cancelBtnAction:" target="-2" id="mgA-wT-quI"/>
+                            </connections>
+                        </button>
+                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cV-Q3-w4x">
+                            <rect key="frame" x="379" y="290" width="66" height="22"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="5" drawsBackground="YES" id="Yg1-uI-YEU">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <outlet property="delegate" destination="-2" id="sq3-MQ-6m7"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </customView>
+            </subviews>
+        </customView>
+    </objects>
+    <resources>
+        <image name="cancel" width="144" height="60"/>
+        <image name="ok" width="164" height="68"/>
+    </resources>
+</document>

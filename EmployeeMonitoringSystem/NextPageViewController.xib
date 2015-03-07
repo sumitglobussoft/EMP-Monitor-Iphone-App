@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NextPageViewController">
+            <connections>
+                <outlet property="changePasswordView" destination="HBe-qr-cG4" id="jci-0M-jjx"/>
+                <outlet property="inputTaskField" destination="XBy-yZ-ibQ" id="ypl-vd-NYB"/>
+                <outlet property="nonWorkingHrs" destination="as0-Zi-SIW" id="IFj-if-ApR"/>
+                <outlet property="orangeView" destination="cBr-uf-aIz" id="9RH-js-5oZ"/>
+                <outlet property="pageView" destination="uP5-Ai-MTI" id="Q4f-Kq-hV1"/>
+                <outlet property="popUpView" destination="3pF-6Y-VLC" id="D4f-cL-BIm"/>
+                <outlet property="stateBox" destination="Ib9-1R-jcn" id="rOc-Fg-del"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="kYO-Lj-WlA"/>
+                <outlet property="workingHrs" destination="5tJ-Kg-WdN" id="TZ1-Nq-w3S"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="897" height="802"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView autoresizesSubviews="NO" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uP5-Ai-MTI">
+                    <rect key="frame" x="0.0" y="-55" width="925" height="857"/>
+                    <subviews>
+                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pF-6Y-VLC" customClass="WhiteView">
+                            <rect key="frame" x="18" y="215" width="864" height="341"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Upa-oc-Pny">
+                                    <rect key="frame" x="56" y="173" width="65" height="58"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="clock" id="Dxc-gj-VDV"/>
+                                </imageView>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="In7-uv-wwS">
+                                    <rect key="frame" x="240" y="208" width="141" height="26"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hours Worked Today:" id="dFS-HJ-UJs">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4l9-kS-Zml">
+                                    <rect key="frame" x="242" y="159" width="139" height="31"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Non Working Hours:" id="IWf-Ua-mfX">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="as0-Zi-SIW">
+                                    <rect key="frame" x="457" y="165" width="132" height="25"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="F6M-pI-aAs">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <outlet property="delegate" destination="-2" id="zh6-gZ-riv"/>
+                                    </connections>
+                                </textField>
+                                <customView canDrawConcurrently="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBr-uf-aIz" customClass="OrangeView" colorLabel="IBBuiltInLabel-Red">
+                                    <rect key="frame" x="0.0" y="276" width="889" height="65"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HcF-Kn-bs7">
+                                            <rect key="frame" x="34" y="8" width="241" height="37"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="justified" title="Work Time Summary" id="uuL-yg-jVi">
+                                                <font key="font" metaFont="system" size="23"/>
+                                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </customView>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tJ-Kg-WdN">
+                                    <rect key="frame" x="457" y="208" width="132" height="26"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="pxH-lO-Kzm">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </customView>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IbQ-Wa-Jeg">
+                            <rect key="frame" x="20" y="139" width="64" height="48"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="settingsBtn" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="6Wh-zp-RfO">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="settingBtnAction:" target="-2" id="YWY-1Y-NUs"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kDm-6g-KwH">
+                            <rect key="frame" x="733" y="101" width="88" height="27"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sign Out" id="Zjz-od-zf5">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2if-w7-bPP">
+                            <rect key="frame" x="834" y="90" width="48" height="48"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="signout" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="9mf-Cd-E6h">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="signOutBtnAction:" target="-2" id="OYE-Yj-tDn"/>
+                            </connections>
+                        </button>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HBe-qr-cG4">
+                            <rect key="frame" x="33" y="81" width="168" height="48"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="saveimg" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="GxV-04-bzd">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="changePasswrdAction:" target="-2" id="QDu-qj-XOI"/>
+                            </connections>
+                        </button>
+                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XBy-yZ-ibQ">
+                            <rect key="frame" x="147" y="583" width="410" height="23"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="border" placeholderString="Enter your task" drawsBackground="YES" id="03O-vI-VPd">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <outlet property="delegate" destination="-2" id="NOL-Bj-ZIF"/>
+                            </connections>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZ6-jT-AAX">
+                            <rect key="frame" x="45" y="627" width="394" height="42"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name to be Displayed" id="4uP-oO-eZJ">
+                                <font key="font" metaFont="system" size="35"/>
+                                <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9L0-9v-FRl" customClass="WhiteView">
+                            <rect key="frame" x="0.0" y="702" width="900" height="155"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rrk-ns-jVF">
+                                    <rect key="frame" x="345" y="2" width="190" height="150"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="emp_ios_logo" id="vsL-XV-V30"/>
+                                </imageView>
+                            </subviews>
+                        </customView>
+                        <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ib9-1R-jcn">
+                            <rect key="frame" x="33" y="581" width="110" height="26"/>
+                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Online" drawsBackground="YES" completes="NO" numberOfVisibleItems="7" id="gcv-R9-Lm9">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <objectValues>
+                                    <string>Online</string>
+                                    <string>Busy</string>
+                                    <string>Away</string>
+                                    <string>Out For Meal</string>
+                                    <string>In Meeting</string>
+                                    <string>On Break</string>
+                                    <string>Sign Out</string>
+                                </objectValues>
+                            </comboBoxCell>
+                            <connections>
+                                <outlet property="delegate" destination="-2" id="dX7-Si-BB4"/>
+                            </connections>
+                        </comboBox>
+                    </subviews>
+                </customView>
+            </subviews>
+            <point key="canvasLocation" x="514.5" y="344"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="clock" width="228" height="209"/>
+        <image name="emp_ios_logo" width="152" height="152"/>
+        <image name="saveimg" width="191.25" height="51"/>
+        <image name="settingsBtn" width="512" height="512"/>
+        <image name="signout" width="40" height="48"/>
+    </resources>
+</document>
